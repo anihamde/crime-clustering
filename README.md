@@ -1,2 +1,5 @@
 # crime-clustering
-Implementation of K-means and K-means++ to form clusters of Houston crime based on location and time
+This project was undertaken at a hackathon in Houston to improve upon heat maps and other forms of crime tracking by police departments. Using a sample of Houston crime data from March 2017, a customized form of the K-means algorithm using the K-means++ initialization method was built to create a 3-dimensional, chronologically based clustering approach to this problem. Randomized restarts allows for analysis of optimal centroids over many runs of the algorithm.
+
+The file "crimecluster.py" contains the implementation of K-means and K-means++ and should be used in combination with the 2 CSV files "march2017barenecessities.csv" and "mar17.csv," for a general clustering on location and time and individual clusterings for each type of crime in Houston. Within "crimecluster.py" is plotting functionality that may be commented out for executional convenience. The "calcLatLong.py" file was originally intended to allow for geocoding APIs to translate addresses into latitude and longitude, but this project ended up using an online geocoding website for ease of use. The Mathematica notebook can be used in coordination with the XLS and CSV files to create 2-D and 3-D visualizations of the data.
+
